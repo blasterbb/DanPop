@@ -12,13 +12,13 @@ J=diag(alpha)+diag(sqrt(beta),1)+diag(sqrt(beta),-1);
 for k=1:3
     V(:,k)=V(:,k)/sqrt(sum(V(:,k).^2));
 end
-
+%calcul diag.
 x=diag(D);
 A=2*V(1,:).^2;
 
 t=simplify((a+b)/2+(b-a)/2*x);
 A=simplify(A*(b-a)/2);
-
+%afisare
 disp(A)
 disp(t)
 
